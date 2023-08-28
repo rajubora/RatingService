@@ -1,12 +1,12 @@
 
 server:
-  port: 8088
+  port: 8080
 
 
 spring:
       data:
            mongodb:
-             uri: mongodb://localhost:27017
+             uri: mongodb://root-user-123:root-user-123@@mongodb-service:27017
              database: microservices
 
       application:
@@ -20,7 +20,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8080/eureka
+      defaultZone: http://eureka-service:8080/eureka
 
 okta:
   oauth2:
